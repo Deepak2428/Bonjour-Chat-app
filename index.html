@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeME</title>
+    <link rel="stylesheet" href="./Style.css">
+   
+</head>
+<body>
+    
+    <div class="video">
+        <video class="video-player" id="user1" autoplay playsinline></video>
+        <video class="video-player" id="user2" autoplay playsinline></video>
+    </div>
+
+    <div class="controls">
+        <div class="controls-container" id="video-btn">
+            <img src="./images/camera.png">
+        </div>
+        <div class="controls-container" id="mic-btn">
+            <img src="./images/mic.png">
+        </div>
+        <a href="lobby.html">
+            <div class="controls-container" id="leave-button">
+                <img src="./images/phone.png">
+            </div>
+        </a>
+    </div>
+
+    <script src="./agora-rtm-sdk-1.5.0.js"></script>
+    <script src="./index.js"></script>
+
+</body>
+</html>
