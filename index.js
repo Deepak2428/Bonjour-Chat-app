@@ -67,7 +67,7 @@
 
         localUser= await navigator.mediaDevices.getUserMedia(constraints)
         document.getElementById("user1").srcObject=localUser;
-
+        localUser.getAudioStreams()[0].enabled = false
     
     }
 
