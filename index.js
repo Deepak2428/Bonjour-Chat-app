@@ -81,7 +81,9 @@
         document.getElementById("user2").srcObject=remoteUser;
         document.getElementById("user2").style.display='block'; // when user 2 joins then user1 will see user2 block
         //adding the audio and video to peerconnection
-        document.getElementById("user2").classList.add('smallFrame');
+        
+        // making user 1 video appear as a block above
+        document.getElementById("user1").classList.add('smallFrame');
         if(!localUser) //the local user is not always set like when we refresh page it is null therefore we cannot get tracks of null so we initialize it again
         {
             localUser= await navigator.mediaDevices.getUserMedia({video:true,audio:true})
