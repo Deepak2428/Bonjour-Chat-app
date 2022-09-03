@@ -179,7 +179,7 @@
     let handleUserLeft= async(MemberId)=>
     {
         document.getElementById("user2").style.display="none";
-        document.getElementById("user2").classList.remove('smallFrame');
+        document.getElementById("user1").classList.remove('smallFrame');
     }
 
     let handleMessageFromPeer= async(message,MemberId)=>
