@@ -85,7 +85,7 @@
         // making user 1 video appear as a block above
         document.getElementById("user1").classList.add('smallFrame');
         document.getElementById('user1').volume = 0
-        document.getElementById('user2').volume = 0
+       
         if(!localUser) //the local user is not always set like when we refresh page it is null therefore we cannot get tracks of null so we initialize it again
         {
             localUser= await navigator.mediaDevices.getUserMedia({video:true,audio:true})
