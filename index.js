@@ -67,8 +67,6 @@
 
         localUser= await navigator.mediaDevices.getUserMedia(constraints)
         document.getElementById("user1").srcObject=localUser;
-        localMediaStream.getAudioStreams()[0].enabled = false
-    
     }
 
     let createPeerConnection= async (MemberId)=>
@@ -84,7 +82,6 @@
         
         // making user 1 video appear as a block above
         document.getElementById("user1").classList.add('smallFrame');
-        document.getElementById('user1').volume = 0
        
         if(!localUser) //the local user is not always set like when we refresh page it is null therefore we cannot get tracks of null so we initialize it again
         {
